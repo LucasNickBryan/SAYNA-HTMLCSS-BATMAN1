@@ -303,15 +303,29 @@ section {
 
         p {
             margin: 20px 0;
+            color: gray
+        }
+
+        .select-frequence {
+            color: gray;
+            &:focus{
+                border: none;
+            }
+        }
+
+        #checkbox {
+            margin-left: 15px;
+            transform: scale(2);
         }
     }
 
     .contact-buttons {
         display: flex;
         justify-content: center;
+
         a {
             border: 2px solid;
-            margin:0 15px;
+            margin: 0 15px;
             padding: 10px 15px;
             text-decoration: none;
             color: var(--white-color);
@@ -319,15 +333,81 @@ section {
             border-image-slice: 1;
         }
     }
-    .confirm-contact-button{
+
+    .confirm-contact-button {
         display: flex;
         justify-content: center;
+
         a {
             padding: 20px 70px;
             text-decoration: none;
             color: var(--white-color);
             background: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(137, 0, 9, 0.6));
             font-size: 18px;
+        }
+    }
+}
+
+#batman-citation{
+    display: flex;
+    justify-content: center;
+    margin: 7% 0;
+    padding-bottom: 5%;
+    
+    .container{
+        width: 70% !important;
+    }
+    .text-citation{
+        position: relative;
+        padding: 10% 12%;
+        // width: 1000px;
+        text-align: center;
+
+        .open-guillement{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .close-guillement{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .sub-text-light{
+            color: var(--gray-light);
+            font-size: 18px;
+        }
+    }
+}
+
+footer div.footer-container{
+    padding-bottom: 50px;
+    // WB part
+    p.wb-part{
+        text-align: center;
+        font-size: 12px;
+        padding-bottom: 40px;
+    }
+    // icons part
+    div.icons-part{
+        display: flex;
+        justify-content: center;
+
+        .left-icons{
+            padding: 0 50px;
+        }
+
+        .left-icons a, .right-icons a{
+            padding: 0 15px;
+            text-decoration: none;
+        }
+        .right-icons{
+            position: relative;
+            top:15px
+        }
+        .left-icons #icon-x{
+            position: relative;
+            top: -15px;
         }
     }
 }

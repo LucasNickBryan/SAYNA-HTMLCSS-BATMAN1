@@ -297,6 +297,17 @@ section {
 }
 #batman-contact .box-header-contact p {
   margin: 20px 0;
+  color: gray;
+}
+#batman-contact .box-header-contact .select-frequence {
+  color: gray;
+}
+#batman-contact .box-header-contact .select-frequence:focus {
+  border: none;
+}
+#batman-contact .box-header-contact #checkbox {
+  margin-left: 15px;
+  transform: scale(2);
 }
 #batman-contact .contact-buttons {
   display: flex;
@@ -321,6 +332,63 @@ section {
   color: var(--white-color);
   background: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(137, 0, 9, 0.6));
   font-size: 18px;
+}
+
+#batman-citation {
+  display: flex;
+  justify-content: center;
+  margin: 7% 0;
+  padding-bottom: 5%;
+}
+#batman-citation .container {
+  width: 70% !important;
+}
+#batman-citation .text-citation {
+  position: relative;
+  padding: 10% 12%;
+  text-align: center;
+}
+#batman-citation .text-citation .open-guillement {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#batman-citation .text-citation .close-guillement {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#batman-citation .text-citation .sub-text-light {
+  color: var(--gray-light);
+  font-size: 18px;
+}
+
+footer div.footer-container {
+  padding-bottom: 50px;
+}
+footer div.footer-container p.wb-part {
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 40px;
+}
+footer div.footer-container div.icons-part {
+  display: flex;
+  justify-content: center;
+}
+footer div.footer-container div.icons-part .left-icons {
+  padding: 0 50px;
+}
+footer div.footer-container div.icons-part .left-icons a, footer div.footer-container div.icons-part .right-icons a {
+  padding: 0 15px;
+  text-decoration: none;
+}
+footer div.footer-container div.icons-part .right-icons {
+  position: relative;
+  top: 15px;
+}
+footer div.footer-container div.icons-part .left-icons #icon-x {
+  position: relative;
+  top: -15px;
 }
 
 /*# sourceMappingURL=styles.css.map */

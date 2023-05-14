@@ -1,0 +1,333 @@
+@font-face {
+    font-family: 'rajdhani';
+    src: url('../polices/Rajdhani/Rajdhani-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'space-grotesk';
+    src: url('../polices/Space_Grotesk/static/SpaceGrotesk-Medium.ttf');
+}
+
+:root {
+    --yellow-color: #FFFF00;
+    --yellow-light: #F8F184;
+    --blue-color: #19587D;
+    --red-color: #b11313;
+    --black-color: #000;
+    --black-light: #0D0E09;
+    --gray-light: #C4C4C4;
+    --yellow-lighter: #EDDEBF;
+    --grena-color: #890008;
+    --white-color: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-color);
+    color: white;
+    font-family: space-grotesk, serif, arial;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: 'rajdhani', serif, Arial;
+    font-weight: 400;
+}
+
+p {
+    font-size: 1.3em;
+}
+
+p.texte {
+    font-size: 22px;
+    font-family: 'space-grotesk', serif, Arial;
+}
+
+p.texte-multimedia {
+    font-size: 18px;
+    font-family: 'space-grotesk', serif, Arial;
+}
+
+.film-title {
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 70px;
+}
+
+nav ul a {
+    color: var(--white-color);
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'rajdhani', serif, arial;
+}
+
+nav ul a:hover {
+    color: var(--yellow-color);
+}
+
+button {
+    font-size: 20px;
+    font-family: rajdhani, serif, Arial;
+    font-weight: 400;
+}
+
+/* Stylisation de la partie Hero */
+header {
+    background-image: url('../Illustrations/Bathome1.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+#hero {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.hero-container {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.hero-container .titre {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero-button {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.hero-button a {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), rgba(177, 19, 19, 0.5));
+    color: var(--white-color);
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'rajdhani', serif, Arial;
+}
+
+.hero-button a:hover {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(177, 19, 19, 1));
+}
+
+aside {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 350px;
+}
+
+aside img.aside-icons {
+    margin: 0 auto;
+    width: 25px;
+}
+
+#arrow-down {
+    height: 20vh;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    padding-top: 7vh;
+}
+
+#arrow-down img {
+    width: 100px;
+    height: 50px;
+}
+
+.box-nemesis,
+.box-allies {
+    position: relative;
+}
+
+.box-nemesis img {
+    position: absolute;
+    width: 170px;
+    left: 50px;
+    top: -100px;
+}
+
+.box-allies img {
+    position: absolute;
+    /* width: 170px; */
+    right: -200px;
+    top: -260px;
+}
+
+/* les cards */
+.cards {
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+figure:hover {
+    transform: scale(1.2);
+    /* agrandit l'image de 20% */
+}
+
+section {
+    padding-bottom: 10%;
+}
+
+.caption-text {
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#allies {
+    position: relative;
+}
+
+#allies img {
+    position: absolute;
+    top: -100px;
+    right: 0;
+}
+
+#batman-justice-league {
+    padding-bottom: 50px;
+}
+
+#batman-justice-league img {
+    padding-top: 100px;
+    width: 100%;
+}
+
+/* multimedia */
+#box-multimedia {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+#multimedia-left img,
+#multimedia-right img {
+    position: absolute;
+    top: 45%;
+}
+
+#multimedia-right img {
+    right: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    width: 700px;
+}
+
+.wrapper-left {
+    grid-column: 1;
+}
+
+.wrapper-right {
+    grid-column: 2;
+    padding: 20px 30px;
+    margin-left: 27px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(to bottom right, rgba(237, 222, 191, 0.4), rgb(25, 88, 125, 0.4));
+}
+
+#imbd {
+    color: var(--yellow-color)
+}
+
+/* CONTACT */
+#batman-contact {
+    background: linear-gradient(to bottom right, rgba(237, 222, 191, 0.4), rgb(25, 88, 125, 0.4));
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    h2 {
+        font-weight: lighter;
+    }
+
+    .container-contact {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .input-contact {
+        border: none;
+        background: none;
+        border-bottom: 2px solid var(--gray-light);
+        width: 100%;
+        font-family: 'space-grotesk', serif;
+        color: var(--white-color);
+        font-size: 18px;
+    }
+
+    .box-header-contact {
+        margin-bottom: 50px;
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+    .contact-buttons {
+        display: flex;
+        justify-content: center;
+        a {
+            border: 2px solid;
+            margin:0 15px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: var(--white-color);
+            border-image: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgb(25, 88, 125, 0.4));
+            border-image-slice: 1;
+        }
+    }
+    .confirm-contact-button{
+        display: flex;
+        justify-content: center;
+        a {
+            padding: 20px 70px;
+            text-decoration: none;
+            color: var(--white-color);
+            background: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(137, 0, 9, 0.6));
+            font-size: 18px;
+        }
+    }
+}

@@ -32,6 +32,7 @@ body {
     color: white;
     font-family: space-grotesk, serif, arial;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 .container {
@@ -308,7 +309,8 @@ section {
 
         .select-frequence {
             color: gray;
-            &:focus{
+
+            &:focus {
                 border: none;
             }
         }
@@ -348,66 +350,162 @@ section {
     }
 }
 
-#batman-citation{
+#batman-citation {
     display: flex;
     justify-content: center;
     margin: 7% 0;
     padding-bottom: 5%;
-    
-    .container{
+
+    .container {
         width: 70% !important;
     }
-    .text-citation{
+
+    .text-citation {
         position: relative;
         padding: 10% 12%;
         // width: 1000px;
         text-align: center;
 
-        .open-guillement{
+        .open-guillement {
             position: absolute;
             left: 0;
             top: 0;
         }
-        .close-guillement{
+
+        .close-guillement {
             position: absolute;
             right: 0;
             bottom: 0;
         }
-        .sub-text-light{
+
+        .sub-text-light {
             color: var(--gray-light);
             font-size: 18px;
         }
     }
 }
 
-footer div.footer-container{
+footer div.footer-container {
     padding-bottom: 50px;
+
     // WB part
-    p.wb-part{
+    p.wb-part {
         text-align: center;
         font-size: 12px;
         padding-bottom: 40px;
     }
+
     // icons part
-    div.icons-part{
+    div.icons-part {
         display: flex;
         justify-content: center;
 
-        .left-icons{
+        .left-icons {
             padding: 0 50px;
         }
 
-        .left-icons a, .right-icons a{
+        .left-icons a,
+        .right-icons a {
             padding: 0 15px;
             text-decoration: none;
         }
-        .right-icons{
+
+        .right-icons {
             position: relative;
-            top:15px
+            top: 15px
         }
-        .left-icons #icon-x{
+
+        .left-icons #icon-x {
             position: relative;
             top: -15px;
         }
     }
+}
+
+
+// RESPONSIVITIES
+@media screen and (max-width: 1600px) {
+
+    #hero {
+        .hero-container{
+            width: 40%;
+        }
+        .hero-button {
+            flex-direction: column;
+
+            a {
+                margin: 10px 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    #hero {
+        .hero-container{
+            width: 50%;
+        }
+    }
+
+    main{
+        .cards{
+            flex-direction: column;
+            padding: 0 auto;
+            figure{
+                display: flex;
+                justify-content: center;
+                img, caption{
+                    display: block;
+                }
+            }
+        }
+    }
+
+    #batman-citation{
+        .open-guillement, .close-guillement{
+            display: none;
+        }
+    }
+
+}
+@media screen and (max-width: 700px) {
+
+    aside{
+        display: none;
+    }
+
+    #hero {
+        .hero-container{
+            width: 80%;
+        }
+    }
+
+    .box-allies img{
+        display: none;
+    }
+
+    .contact-buttons{
+        flex-direction: column;
+        justify-content: space-between;
+        a{
+            margin: 10px 0 !important;
+            max-width: 130px;
+        }
+    }
+
+    footer{
+        .icons-part{
+            flex-direction: column;
+            .left-icons, .right-icons{
+                display: flex;
+                justify-content: center;
+
+                #icon-x{
+                    padding-top: 30px;
+                }
+            }
+        }
+    }
+
 }

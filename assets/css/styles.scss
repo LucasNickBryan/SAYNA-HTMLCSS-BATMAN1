@@ -267,7 +267,7 @@ section {
 }
 
 #imbd {
-    color: var(--yellow-color)
+    color: var(--yellow-color);
 }
 
 /* CONTACT */
@@ -340,12 +340,12 @@ section {
         display: flex;
         justify-content: center;
 
-        a {
+        input {
             padding: 20px 70px;
-            text-decoration: none;
             color: var(--white-color);
             background: linear-gradient(to right, rgba(237, 222, 191, 0.4), rgba(137, 0, 9, 0.6));
             font-size: 18px;
+            border: none;
         }
     }
 }
@@ -422,14 +422,40 @@ footer div.footer-container {
     }
 }
 
+// MESSAGE
+#message {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-light);
+
+    #text-message {
+        background: linear-gradient(to bottom right, rgba(237, 222, 191, 0.4), rgb(25, 88, 125, 0.4));
+        width: 40%;
+        height: 40%;
+        margin: 250px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+            text-align: center;
+        }
+
+    }
+}
+
 
 // RESPONSIVITIES
 @media screen and (max-width: 1600px) {
 
     #hero {
-        .hero-container{
+        .hero-container {
             width: 40%;
         }
+
         .hero-button {
             flex-direction: column;
 
@@ -443,65 +469,74 @@ footer div.footer-container {
 @media screen and (max-width: 1000px) {
 
     #hero {
-        .hero-container{
+        .hero-container {
             width: 50%;
         }
     }
 
-    main{
-        .cards{
+    main {
+        .cards {
             flex-direction: column;
             padding: 0 auto;
-            figure{
+
+            figure {
                 display: flex;
                 justify-content: center;
-                img, caption{
+
+                img,
+                caption {
                     display: block;
                 }
             }
         }
     }
 
-    #batman-citation{
-        .open-guillement, .close-guillement{
+    #batman-citation {
+
+        .open-guillement,
+        .close-guillement {
             display: none;
         }
     }
 
 }
+
 @media screen and (max-width: 700px) {
 
-    aside{
+    aside {
         display: none;
     }
 
     #hero {
-        .hero-container{
+        .hero-container {
             width: 80%;
         }
     }
 
-    .box-allies img{
+    .box-allies img {
         display: none;
     }
 
-    .contact-buttons{
+    .contact-buttons {
         flex-direction: column;
         justify-content: space-between;
-        a{
+
+        a {
             margin: 10px 0 !important;
             max-width: 130px;
         }
     }
 
-    footer{
-        .icons-part{
+    footer {
+        .icons-part {
             flex-direction: column;
-            .left-icons, .right-icons{
+
+            .left-icons,
+            .right-icons {
                 display: flex;
                 justify-content: center;
 
-                #icon-x{
+                #icon-x {
                     padding-top: 30px;
                 }
             }

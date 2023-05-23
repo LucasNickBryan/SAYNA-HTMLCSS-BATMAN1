@@ -32,8 +32,8 @@
                 </div>
 
                 <div class="hero-button"> <!-- cta: call to action -->
-                    <a href="">VOIR LE HÉROS</a>
-                    <a href="">LES ADVERSAIRES</a>
+                    <a href="#cinema-link">VOIR LE HÉROS</a>
+                    <a href="#nemesis-link">LES ADVERSAIRES</a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
         <!-- Section Batman au cinéma -->
         <section id="batman-cinema">
             <div class="container">
-                <h1 class="film-title">BATMAN AU CINÉMA</h1>
+                <h1 class="film-title" id="cinema-link">BATMAN AU CINÉMA</h1>
                 <p class="texte">
                     Le personnage de Batman est un super héros de l’univers de DC Comics. Il a été créé par le
                     dessinateur Bob Kane et le scénariste Bill Finger et apparaît pour la première fois dans le
@@ -112,7 +112,7 @@
             <div class="container">
                 <div class="box-nemesis">
                     <img src="./assets/Illustrations/Bathome13.png" alt="arme">
-                    <h1 class="film-title">NÉMÉSIS</h1>
+                    <h1 class="film-title" id="nemesis-link">NÉMÉSIS</h1>
                 </div>
                 <p class="texte">
                     Batman souhaite éradiquer la criminalité de Gotham. C’est pourquoi, il affrontera la plupart
@@ -294,8 +294,14 @@
                         </p>
                         <p>
                             <select name="" id="" class="input-contact select-frequence">
-                                <option value="">Choisissez la fréquence à laquelle vous souhaitez recevoir votre
-                                    newsletter</option>
+                                <option value=""> <span class="select-text">Choisissez la fréquence à laquelle vous
+                                        souhaitez recevoir votre
+                                        newsletter</span> </option>
+                                <option value="">Une fois par semaine</option>
+                                <option value="">Une fois toutes les deux semaines (2 fois par mois)</option>
+                                <option value="">Une fois par mois</option>
+                                <option value="">Une fois tous les trois mois</option>
+                                <option value="">Une fois tous les six mois</option>
                             </select>
                         </p>
                         <p>
@@ -314,7 +320,8 @@
                                 placeholder="Laissez un commentaire pour la communauté"></textarea></p>
                     </div>
                     <div class="confirm-contact-button">
-                        <a href="#">CONFIRMER</a>
+                        <input type="button" value="CONFIRMER">
+                        <!-- <a href=""></a> -->
                     </div>
                 </form>
             </div>
@@ -361,6 +368,12 @@
         </div>
     </footer>
 
+    <!-- MESSAGE -->
+    <div id="message">
+        <div id="text-message">
+            <H2>MESSAGE REÇU !</H2>
+        </div>
+    </div>
 </body>
 
 </html>
